@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="CLIENTS MANAGEMENT SYSTEM">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <CreatableItems>
+    <CreatableItem ClassName="CLIENTS_MANAGEMENT_SYSTEM.Module.BusinessObjects.Client" ImageName="BO_Customer" />
+    <CreatableItem ClassName="Contact" ImageName="BO_Contact" />
+  </CreatableItems>
+  <NavigationItems>
+    <Items>
+      <Item Id="Clients" ImageName="Customers">
+        <Items>
+          <Item Id="Client_ListView" ImageName="BO_Customer" />
+          <Item Id="Contact_ListView" ImageName="BO_Contact" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="23.2.3.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="23.2.3.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="23.2.3.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <ListView Id="Client_Contacts_ListView" ImageName="BO_Customer" />
+    <DetailView Id="Client_DetailView" ImageName="BO_Customer" />
+    <ListView Id="Client_ListView" ImageName="BO_Customer" />
+    <ListView Id="Client_LookupListView" ImageName="BO_Customer" />
+    <ListView Id="Contact_Clients_ListView" ImageName="BO_Customer" />
+    <DetailView Id="Contact_DetailView" ImageName="BO_Contact" />
+    <ListView Id="Contact_ListView" ImageName="BO_Contact" />
+    <ListView Id="Contact_LookupListView" ImageName="BO_Customer" />
+  </Views>
+</Application>
